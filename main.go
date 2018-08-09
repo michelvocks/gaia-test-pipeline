@@ -7,7 +7,7 @@ import (
 	sdk "github.com/michelvocks/gosdk"
 )
 
-func CreateUser(args map[string]string) error {
+func CreateUser(args sdk.Arguments) error {
 	log.Println("CreateUser has been started!")
 
 	// lets sleep to simulate that we do something
@@ -18,7 +18,7 @@ func CreateUser(args map[string]string) error {
 	return nil
 }
 
-func MigrateDB(args map[string]string) error {
+func MigrateDB(args sdk.Arguments) error {
 	log.Println("MigrateDB has been started!")
 
 	// lets sleep to simulate that we do something
@@ -29,7 +29,7 @@ func MigrateDB(args map[string]string) error {
 	return nil
 }
 
-func CreateNamespace(args map[string]string) error {
+func CreateNamespace(args sdk.Arguments) error {
 	log.Println("CreateNamespace has been started!")
 
 	// lets sleep to simulate that we do something
@@ -40,7 +40,7 @@ func CreateNamespace(args map[string]string) error {
 	return nil
 }
 
-func CreateDeployment(args map[string]string) error {
+func CreateDeployment(args sdk.Arguments) error {
 	log.Println("CreateDeployment has been started!")
 
 	// lets sleep to simulate that we do something
@@ -51,7 +51,7 @@ func CreateDeployment(args map[string]string) error {
 	return nil
 }
 
-func CreateService(args map[string]string) error {
+func CreateService(args sdk.Arguments) error {
 	log.Println("CreateService has been started!")
 
 	// lets sleep to simulate that we do something
@@ -62,7 +62,7 @@ func CreateService(args map[string]string) error {
 	return nil
 }
 
-func CreateIngress(args map[string]string) error {
+func CreateIngress(args sdk.Arguments) error {
 	log.Println("CreateIngress has been started!")
 
 	// lets sleep to simulate that we do something
@@ -73,7 +73,7 @@ func CreateIngress(args map[string]string) error {
 	return nil
 }
 
-func Cleanup(args map[string]string) error {
+func Cleanup(args sdk.Arguments) error {
 	log.Println("Cleanup has been started!")
 
 	// lets sleep to simulate that we do something

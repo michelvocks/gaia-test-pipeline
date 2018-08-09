@@ -9,8 +9,11 @@ var jobs = sdk.Jobs{
 		Handler:     CreateUser,
 		Title:       "Create DB User",
 		Description: "Creates a database user with least privileged permissions.",
-		Args: map[string]string{
-			"username": "",
+		Args: []sdk.Argument{
+			sdk.Argument{
+				Description: "Username for the database schema.",
+				Type:        sdk.TextFieldInp,
+			},
 		},
 	},
 	sdk.Job{
