@@ -10,6 +10,11 @@ import (
 func CreateUser(args sdk.Arguments) error {
 	log.Println("CreateUser has been started!")
 
+	// Print arguments
+	for _, arg := range args {
+		log.Printf("Key: %s; Value: %s;\n", arg.Key, arg.Value)
+	}
+
 	// lets sleep to simulate that we do something
 	time.Sleep(15 * time.Second)
 
