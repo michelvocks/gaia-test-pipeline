@@ -9,7 +9,7 @@ var jobs = sdk.Jobs{
 		Handler:     CreateUser,
 		Title:       "Create DB User",
 		Description: "Creates a database user with least privileged permissions.",
-		Args: []sdk.Argument{
+		Args: sdk.Arguments{
 			sdk.Argument{
 				Description: "Username for the database schema.",
 				Type:        sdk.TextFieldInp,
@@ -22,6 +22,12 @@ var jobs = sdk.Jobs{
 		Title:       "DB Migration",
 		Description: "Imports newest test data dump and migrates to newest version.",
 		DependsOn:   []string{"Create DB User"},
+		Args: sdk.Arguments{
+			sdk.Argument{
+				Type: sdk.VaultInp,
+				Key:  "dbpassword",
+			},
+		},
 	},
 	sdk.Job{
 		Handler:     CreateNamespace,
