@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	sdk "github.com/michelvocks/gosdk"
+	sdk "github.com/gaia-pipeline/gosdk"
 )
 
 func CreateUser(args sdk.Arguments) error {

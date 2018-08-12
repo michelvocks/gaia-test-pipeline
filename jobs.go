@@ -1,7 +1,7 @@
 package main
 
 import (
-	sdk "github.com/michelvocks/gosdk"
+	sdk "github.com/gaia-pipeline/gosdk"
 )
 
 var jobs = sdk.Jobs{
