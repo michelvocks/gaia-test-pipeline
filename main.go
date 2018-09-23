@@ -16,7 +16,7 @@ func CreateUser(args sdk.Arguments) error {
 	}
 
 	// lets sleep to simulate that we do something
-	time.Sleep(15 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	log.Println("CreateUser has been finished!")
 
@@ -32,7 +32,7 @@ func MigrateDB(args sdk.Arguments) error {
 	}
 
 	// lets sleep to simulate that we do something
-	time.Sleep(15 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	log.Println("MigrateDB has been finished!")
 
@@ -43,7 +43,7 @@ func CreateNamespace(args sdk.Arguments) error {
 	log.Println("CreateNamespace has been started!")
 
 	// lets sleep to simulate that we do something
-	time.Sleep(15 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	log.Println("CreateNamespace has been finished!")
 
@@ -54,7 +54,7 @@ func CreateDeployment(args sdk.Arguments) error {
 	log.Println("CreateDeployment has been started!")
 
 	// lets sleep to simulate that we do something
-	time.Sleep(15 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	log.Println("CreateDeployment has been finished!")
 
@@ -65,7 +65,7 @@ func CreateService(args sdk.Arguments) error {
 	log.Println("CreateService has been started!")
 
 	// lets sleep to simulate that we do something
-	time.Sleep(15 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	log.Println("CreateService has been finished!")
 
@@ -76,18 +76,18 @@ func CreateIngress(args sdk.Arguments) error {
 	log.Println("CreateIngress has been started!")
 
 	// lets sleep to simulate that we do something
-	time.Sleep(15 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	log.Println("CreateIngress has been finished!")
 
-	return nil
+	return sdk.ErrorExitPipeline
 }
 
 func Cleanup(args sdk.Arguments) error {
 	log.Println("Cleanup has been started!")
 
 	// lets sleep to simulate that we do something
-	time.Sleep(15 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	log.Println("Cleanup has been finished!")
 
