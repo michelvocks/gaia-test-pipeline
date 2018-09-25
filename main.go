@@ -80,7 +80,7 @@ func CreateIngress(args sdk.Arguments) error {
 
 	log.Println("CreateIngress has been finished!")
 
-	return sdk.ErrorExitPipeline
+	return nil
 }
 
 func Cleanup(args sdk.Arguments) error {
