@@ -12,7 +12,7 @@ var jobs = sdk.Jobs{
 		Args: sdk.Arguments{
 			sdk.Argument{
 				Description: "Username for the database schema.",
-				Type:        sdk.TextFieldInp,
+				Type:        sdk.VaultInp,
 				Key:         "username",
 			},
 		},
